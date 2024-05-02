@@ -9,8 +9,10 @@
 }
 
 .App-Artists{
-    background-color: #0D0D0D;
-    
+    background-color: #0d0d0d;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
 }
 
 .artists{
@@ -19,6 +21,7 @@
     justify-content: space-evenly;
     padding-top: 250px;
     padding-bottom: 250px;
+    background-color: #000000;
 }
 
 .card1{
@@ -39,4 +42,7 @@
 
 button{
     background-color: red;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
 }
