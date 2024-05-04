@@ -2,11 +2,8 @@ import './Artist.css';
 
 function Artists(){
     return(
-        <div className='App-Artists'> 
-            <div className='section-heading'>
-                <h1>Artists</h1>
-            </div>
-            
+        <section className='App-Artists'> 
+            <img src={require('../../resources/Background/ato.png')} alt='bg_img' className='bg_img'/> 
             <div className='artists'>
                 <div className="card1">
                     <img src={require('../../resources/headshot.jpg')} alt="Artist 1" className='img1'/>
@@ -24,7 +21,7 @@ function Artists(){
                 </div>                
             </div>
 
-        </div>
+        </section>
     )
 }
 
