@@ -3,10 +3,10 @@
     align-items: center;
     justify-content: space-evenly;
     column-gap: 2px;
-
+    border: 1px solid white;
 }
 
 .icon{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
 }
