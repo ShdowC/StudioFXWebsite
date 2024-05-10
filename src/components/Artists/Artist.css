@@ -13,7 +13,6 @@
 
 .App-Artists{
     position: relative;
-    border: 1px solid white;
     margin-bottom: 10px;
 }
 
@@ -33,22 +32,19 @@
     justify-content: space-evenly;
     padding-top: 200px;
     padding-bottom: 200px;
-    border-radius: 1px solid white;
+
 }
 
 .card1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
-    
 }
 
 .card2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid white;
 }
 
 .section-heading{
@@ -56,10 +52,11 @@
 }
 
 button{
-    background-color: red;
+    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
     color: white;
     text-decoration: none;
     width: 200px;
     height: 50px;   
     text-decoration: underline;
+    
 }

@@ -1,0 +1,19 @@
+.bg-img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -23rem;
+    opacity: 0.5;
+    margin-top: 5rem;
+}
+
+.App-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-logo{
+    height: 80px;
+    width: 80px;
+}
