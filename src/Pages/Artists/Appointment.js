@@ -16,6 +16,7 @@ export function Appointment(){
         .then(
           () => {
             console.log('SUCCESS!');
+            alert("Submitted...")
           },
           (error) => {
             console.log('FAILED...', error.text);
