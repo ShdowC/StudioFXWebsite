@@ -50,14 +50,13 @@ export function Appointment(){
                         <label htmlFor="placement">Placement on your Body:
                             <input type="text" name='placement' id='placement'/>
                         </label>
-                        <label htmlFor="color">Tattoo Color:
+                        <br />
+                        <label htmlFor="colorMode">Tattoo Color:
                             <div>
-                                <input type="radio" name="color" id="color" />
-                                <label htmlFor="color">Color</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="black" id="black" />
-                                <label htmlFor="black">Black and Grey</label>
+                                <input type="radio" name="colorMode" id="color" value="color" />
+                                <label for="color">Color</label><br />
+                                <input type="radio" name="colorMode" id="black" value="black" />
+                                <label for="black">Black and Grey</label>
                             </div>
                         </label>
                         </form>
