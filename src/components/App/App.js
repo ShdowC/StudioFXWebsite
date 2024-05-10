@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <img src={require('../../resources/Background/ato.png')} alt='background-overlay' className='bg-img'/>
       <Routes>
-        <Route path='/index.html' element={
+        <Route path='/' element={
           <>
             <Header />
             <Body />
