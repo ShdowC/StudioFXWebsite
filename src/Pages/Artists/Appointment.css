@@ -17,3 +17,10 @@
     height: 80px;
     width: 80px;
 }
+
+.form_body{
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px;
+    border: 1px solid white;
+}

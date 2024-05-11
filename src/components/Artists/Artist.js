@@ -1,4 +1,5 @@
 import './Artist.css';
+import { Link } from 'react-router-dom';
 
 function Artists(){
     return(
@@ -8,14 +9,14 @@ function Artists(){
                 <div className="card1">
                     <img src={require('../../resources/Shane.png')} alt="Artist 1" className='img1'/>
                     <h2>Shane Singh</h2>
-                    <button>View Gallery</button>
+                    <Link to='/Gallery/StudioFX'><button>View Gallery</button></Link>
                     <p>Specializes in illustrative color
                     and decorative fine line ornamental art.</p>
                 </div>
                 <div className="card2">
                     <img src={require('../../resources/Ramon.png')} alt="Artist 2" className='img1'/>
                     <h2>Ramon Gonzales</h2>
-                    <button>View Gallery</button>
+                    <Link to='/Gallery/MadMenInk'><button>View Gallery</button></Link>
                     <p>Specializes in illustrative color 
                     and decorative fine line ornamental art.</p>
                 </div>                

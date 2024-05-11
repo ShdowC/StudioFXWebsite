@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { Appointment } from '../../Pages/Artists/Appointment';
+import { Gallery } from '../../Pages/Gallery/Gallery';
 
 function App() {
   return (
@@ -18,9 +19,34 @@ function App() {
             <Body />
             <Artists />
             <Footer />
-          </>} 
+          </>
+          } 
         />
-        <Route path='/Appointment' element={ <Appointment /> } />
+        <Route path='/Appointment' element={ 
+        <>
+            <Appointment />
+            <Footer />
+        </>
+        } 
+        />
+        <Route path='/Gallery/StudioFX' element={
+          <>
+            <Header />
+            <Gallery name="Shane Singh" />
+            <Footer />
+          </>
+        } 
+        />
+          <Route path='/Gallery/MadMenInk' element={
+          <>
+            <Header />
+            <Gallery name="Ramon Gonazales" />
+            <Footer />
+          </>
+        } 
+        />
+
+
       </Routes>
 
 

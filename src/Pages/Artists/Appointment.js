@@ -31,7 +31,7 @@ export function Appointment(){
             <header className="App-header">
                 <img src={require('../../resources/logo.png')} alt='logo'/>
             </header>
-            <section className='App-Body'>
+            <section className='form_body'>
                 <div>
                     <h1>MAKE AN APPOINTMENT</h1>
                     <span>Please Complete The Form Below</span>
