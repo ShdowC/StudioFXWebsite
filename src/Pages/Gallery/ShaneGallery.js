@@ -1,7 +1,8 @@
 import React from 'react'
 import './Gallery';
 
-function ShaneGallery() {
+function ShaneGallery({feed}) {
+  console.log(feed);  
   return (
     <>
         <div className='gallery-container'> 
@@ -15,11 +16,14 @@ function ShaneGallery() {
 export default ShaneGallery
 
 export const getStaticProps = async () => {
-    const url = 'https://graph.instagram.com/me?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=';
+    const url = `https://graph.instagram.com/me?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${process.env.REACT_APP_INSTAGRAM_KEY}`;
     const data = await fetch(url)
     const feed = await data.json();
 
-    console.log(feed);
-    console.log(process.env.REACT_APP_INSTAGRAM_KEY);
+    return {
+        props: {
+            feed,
+        }
+    }
 };
 
