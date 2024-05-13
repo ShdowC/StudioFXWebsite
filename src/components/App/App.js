@@ -7,6 +7,7 @@ import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { Appointment } from '../../Pages/Artists/Appointment';
 import { Gallery } from '../../Pages/Gallery/Gallery';
+import ShaneGallery from '../../Pages/Gallery/ShaneGallery';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <>
             <Header />
             <Gallery name="Shane Singh" />
+            <ShaneGallery />
             <Footer />
           </>
         } 
