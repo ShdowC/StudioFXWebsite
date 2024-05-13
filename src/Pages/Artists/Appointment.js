@@ -28,9 +28,7 @@ export function Appointment(){
     return(
         <>
             <img src={require('../../resources/Background/ato.png')} alt='background-overlay' className='bg-img'/>
-            <header className="App-header">
-                <img src={require('../../resources/logo.png')} alt='logo'/>
-            </header>
+            
             <section className='form_body'>
                 <div>
                     <h1>MAKE AN APPOINTMENT</h1>

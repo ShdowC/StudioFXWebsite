@@ -24,6 +24,7 @@ function App() {
         />
         <Route path='/Appointment' element={ 
         <>
+            <Header />
             <Appointment />
             <Footer />
         </>
