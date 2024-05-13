@@ -8,4 +8,9 @@
 
 h1{
     color: white;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
 }
