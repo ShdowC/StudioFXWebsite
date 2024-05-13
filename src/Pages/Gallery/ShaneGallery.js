@@ -15,9 +15,11 @@ function ShaneGallery() {
 export default ShaneGallery
 
 export const getStaticProps = async () => {
-    const url = 'https://graph.instagram.com/me?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=$IGQWRONG9vT2d0SWNGOGY3QzVCSDhXaHZA2djRJNWw2UUdMNHlkcGRBSTJPWFNYUW1sMGpGSVFWd3RNcGRzYnhqN2xlQnFjWXRaOTl6RGl1OEpRVEZAkVzhYV3IzZADh3eE5Yenlpd3FZAWHlxaDI3aFJQX3RNby1RYlEZD';
+    const url = 'https://graph.instagram.com/me?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=';
     const data = await fetch(url)
     const feed = await data.json();
 
     console.log(feed);
+    console.log(process.env.REACT_APP_INSTAGRAM_KEY);
 };
+
