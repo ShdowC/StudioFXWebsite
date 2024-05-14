@@ -17,7 +17,7 @@ const ShaneGallery = ({token, ...props}) => {
         async function fetchInstagramPost () {
           try{
             axios
-                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${props.token}`)
+                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${tokenProp.current}`)
                 .then((resp) => {
                     setFeedsData(resp.data.data)
                 })
@@ -38,7 +38,7 @@ const ShaneGallery = ({token, ...props}) => {
 
 return (
     <>
-        <div className='container'> 
+        <div className='contain'> 
             <h1>Instagram Feed</h1>
             
             <div className="container">
@@ -53,14 +53,4 @@ return (
 }
 
 export default ShaneGallery;
-
-export const getStaticProps = async () => {
-    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${process.env.REACT_APP_INSTAGRAM_KEY}`;
-    const data = await fetch(url)
-    const feed = await data.json();
-
-    console.log(feed);
-
-    return {props: {feed}, };
-}; 
 
