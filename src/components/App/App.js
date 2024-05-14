@@ -36,7 +36,7 @@ function App() {
           <>
             <Header />
             <Gallery name="Shane Singh" />
-            <ShaneGallery />
+            <ShaneGallery token={process.env.REACT_APP_INS_TOKEN} limit={12} />
             <Footer />
           </>
         } 
