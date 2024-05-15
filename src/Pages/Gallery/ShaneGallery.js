@@ -38,7 +38,7 @@ const ShaneGallery = ({token, ...props}) => {
 
 return (
     <>
-        <div className='contain'> 
+        <div className='main_container'> 
             <h1>Instagram Feed</h1>
             
             <div className="container">

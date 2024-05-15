@@ -1,11 +1,56 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react';
+import './Gallery';
+import axios from 'axios';
+import Feed from './Feed';
 
-function RamonGallery() {
-  return (
-    <div >
+const RamonGallery = ({token, ...props}) => {
+
+    const [feeds, setFeedsData] = useState([])
+    //use useRef to store the latest value of the prop without firing the effect
+    const tokenProp = useRef(token);
+    tokenProp.current = token;
+
+    useEffect(() => {
+        // this is to avoid memory leaks
+        const abortController = new AbortController();
+
+        async function fetchInstagramPost () {
+          try{
+            axios
+                .get(`https://graph.instagram.com/me/media?fields=id,media_type,media_url,caption&limit=${props.limit}&access_token=${tokenProp.current}`)
+                .then((resp) => {
+                    setFeedsData(resp.data.data)
+                })
+          } catch (err) {
+              console.log('error', err)
+          }
+        }
         
-    </div>
+        // manually call the fetch function 
+        fetchInstagramPost();
+  
+        return () => {
+            // cancel pending fetch request on component unmount
+            abortController.abort(); 
+        };
+    }, [props.limit])
+
+
+return (
+    <>
+        <div className='contain'> 
+            <h1>Instagram Feed</h1>
+            
+            <div className="container">
+                {feeds.map((feed) => (
+                <Feed key={feed.id} feed={feed} />
+                ))}
+            </div>
+        </div>
+    </>
+   
   )
 }
 
-export default RamonGallery
+export default RamonGallery;
+

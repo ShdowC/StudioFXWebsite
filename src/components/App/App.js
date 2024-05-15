@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import { Appointment } from '../../Pages/Artists/Appointment';
 import { Gallery } from '../../Pages/Gallery/Gallery';
 import ShaneGallery from '../../Pages/Gallery/ShaneGallery';
+import RamonGallery from '../../Pages/Gallery/RamonGallery';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
           <>
             <Header />
             <Gallery name="Ramon Gonazales" />
-            <Footer />
+            <RamonGallery token={process.env.REACT_APP_INS_TOKEN} limit={12} />            <Footer />
           </>
         } 
         />

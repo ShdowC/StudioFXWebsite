@@ -7,6 +7,22 @@
     margin-top: 5rem;
 }
 
+.appointment_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.logo_headers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .App-header{
     display: flex;
     align-items: center;
@@ -22,5 +38,51 @@
     display: flex;
     justify-content: center;
     margin: 5px 5px;
-    border: 1px solid white;
 }
+
+.form_{
+    
+    padding: 4rem 4rem;
+    background-color: #0C090A;
+}
+
+.form_div{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    margin-bottom: 0.4rem;
+    padding: 5px;
+    grid-gap: 14px;
+}
+
+.radio_{
+    justify-self: center;
+    display: flex;
+    grid-gap: 14px;
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label,
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea{
+    resize: none;
+    box-shadow: 1px 1px 1px #999;
+    width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 6;
+}
+
+@media only screen and (max-width: 1200px) {
+    .bg-img{
+        display: none;    
+    }
+}
+
