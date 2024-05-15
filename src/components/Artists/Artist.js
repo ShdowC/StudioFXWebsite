@@ -5,6 +5,9 @@ function Artists(){
     return(
         <section className='App-Artists'> 
             <img src={require('../../resources/Background/ato.png')} alt='bg_img' className='bg_img'/> 
+
+            <h1>ARTISTS</h1>
+
             <div className='artists'>
                 <div className="card1">
                     <img src={require('../../resources/Shane.png')} alt="Artist 1" className='img1'/>

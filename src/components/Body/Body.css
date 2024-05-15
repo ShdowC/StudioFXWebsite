@@ -35,7 +35,7 @@
 }
 
 .App-Info{
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
     height: 45vh;
     background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
 }
@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     height: 45vh;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
 }
 
 .info-box{

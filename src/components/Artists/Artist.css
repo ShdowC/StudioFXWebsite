@@ -11,29 +11,25 @@
     border-radius: 15%;
 }
 
-.App-Artists{
-    position: relative;
-    margin-bottom: 10px;
-    height: 100vh;
-}
-
 .bg_img{
     position: absolute;
     z-index: -1;
     top: 0;
     right: -22rem;
     opacity: 0.5;
-    
 }
 
+.App-Artists{
+    position: relative;
+    margin-bottom: 5rem;
+    height: 100vh;
+}
 
 .artists{
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-evenly;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
+    justify-content: center;
+    grid-template-columns: 0.5fr 0.5fr;
 }
 
 .card1{
@@ -61,3 +57,11 @@ button{
     text-decoration: underline;
     
 }
+
+@media only screen and (max-width: 700px) {
+    .artists {
+      grid-template-columns: 0.5fr;
+      grid-column-gap: 5%;
+      height: 100vh;
+    }
+  }

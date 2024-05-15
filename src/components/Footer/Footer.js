@@ -11,7 +11,7 @@ function Footer(){
                 </div>
             </div>
             <div className='Company_'>
-                    <span>© 2024 ShadowSoftware. All Rights Reserved</span>
+                    <span>© 2024 StudioFX. All Rights Reserved</span>
             </div>
         </footer>
     )
