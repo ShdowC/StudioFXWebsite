@@ -84,5 +84,9 @@ textarea{
     .bg-img{
         display: none;    
     }
+
+    .appointment_header h1{
+        font-size: 2rem;
+    }
 }
 
