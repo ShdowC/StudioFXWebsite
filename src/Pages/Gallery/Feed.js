@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Gallery';
 
 const Feed = (props) => {
     const { id, caption, media_type, media_url} = props.feed
@@ -8,19 +9,19 @@ const Feed = (props) => {
         case "VIDEO":
             post = (
                 <video
+                    className='igVideo'
                     width='100%'
                     height='auto' 
                     src={media_url} 
                     type="video/mp4" 
-                    controls playsinline>
+                    controls>
                 </video>
             )
             break;
         case "CAROUSEL_ALBUM":
             post = (
                 <img 
-                    width='100%'
-                    height='auto'
+                    className='igImage'
                     id={id} 
                     src={media_url} 
                     alt={caption} 
@@ -30,19 +31,20 @@ const Feed = (props) => {
         default:
             post = (
                 <img 
-                    width='100%'
-                    height='auto'
+                    className='igImage'
                     id={id} 
                     src={media_url} 
                     alt={caption} 
                 />
             );
-    }       
+    }   
 
     return (
-        <React.Fragment>
-            {post}
-        </React.Fragment>
+        <>
+            <div className='appFeed'>
+                {post}  
+            </div>
+        </>
     );
 }
 

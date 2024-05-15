@@ -36,10 +36,13 @@ const ShaneGallery = ({token, ...props}) => {
     }, [props.limit])
 
 
+
 return (
     <>
         <div className='main_container'> 
-            <h1>Instagram Feed</h1>
+            <div>
+                <h1>Gallery</h1>
+            </div>
             
             <div className="container">
                 {feeds.map((feed) => (

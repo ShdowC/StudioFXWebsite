@@ -37,7 +37,7 @@ function App() {
           <>
             <Header />
             <Gallery name="Shane Singh" />
-            <ShaneGallery token={process.env.REACT_APP_INS_TOKEN} limit={12} />
+            <ShaneGallery token={process.env.REACT_APP_INS_TOKEN} limit={39} />
             <Footer />
           </>
         } 
@@ -46,7 +46,7 @@ function App() {
           <>
             <Header />
             <Gallery name="Ramon Gonazales" />
-            <RamonGallery token={process.env.REACT_APP_INS_TOKEN} limit={12} />            
+            <RamonGallery token={process.env.REACT_APP_INS_TOKEN2} limit={12} />            
             <Footer />
           </>
         } 

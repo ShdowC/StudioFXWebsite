@@ -12,6 +12,7 @@ export function Gallery({name}){
                 <h1>{name}</h1>
                 <Link to='/Appointment'><button>Make An Appointment</button></Link>
             </div>
+            
         </>
        
     )
