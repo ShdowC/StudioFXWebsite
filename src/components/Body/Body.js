@@ -5,11 +5,10 @@ function Body(){
     return (
         <>
             <section className='App-Body'>
-                <div>
-                    <h1 className='heading'>Avoid The <span className='color-change'>Ordinary</span></h1>
+                <div className='heading'>
+                    <h1 >Avoid The <span className='color-change'>Ordinary</span></h1>
+                    <Link to="/Appointment">Make an Appointment</Link>
                 </div>
-                <Link to="/Appointment">Make an Appointment</Link>
-                
             </section>
             <section className='App-Info'>
                 <div className='info'>
@@ -24,9 +23,9 @@ function Body(){
                     </div>
                     <div className='info-box'>
                         <h3>CONTACT</h3>
-                        <span>1-(868)-367-5908</span>
+                        <span>StudioFX: </span><span>1-(868)-367-5908</span>
                         <br></br>
-                        <span>1-(868)-305-9588</span>
+                        <span>MadMenInk: </span><span>1-(868)-305-9588</span>
                     </div>
                 </div>
             </section>

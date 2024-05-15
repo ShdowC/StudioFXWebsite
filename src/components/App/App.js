@@ -46,7 +46,8 @@ function App() {
           <>
             <Header />
             <Gallery name="Ramon Gonazales" />
-            <RamonGallery token={process.env.REACT_APP_INS_TOKEN} limit={12} />            <Footer />
+            <RamonGallery token={process.env.REACT_APP_INS_TOKEN} limit={12} />            
+            <Footer />
           </>
         } 
         />
