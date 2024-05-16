@@ -12,11 +12,11 @@ import RamonGallery from '../../Pages/Gallery/RamonGallery';
 
 
 function App() {
+  console.log(process.env.REACT_APP_INS_TOKEN);
 
   return (
     <div className="App">
       <img src={require('../../resources/Background/ato.png')} alt='background-overlay' className='bg-img'/>
-      
       <Routes>
         <Route path='/' element={
           <>
