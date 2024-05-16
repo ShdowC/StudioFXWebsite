@@ -38,8 +38,10 @@ const RamonGallery = ({token, ...props}) => {
 
 return (
     <>
-        <div className='contain'> 
-            <h1>Instagram Feed</h1>
+        <div className='main_container'> 
+            <div>
+                <h1>Gallery</h1>
+            </div>
             
             <div className="container">
                 {feeds.map((feed) => (
