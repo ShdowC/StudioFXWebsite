@@ -7,7 +7,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     margin: 10px 20px;
-    height: 90vh;
+    height: 80vh;
 }
 
 .color-change{
@@ -40,7 +40,7 @@
     background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
 }
 
-.info{
+.infoContainer{
     display: grid;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,11 @@
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
 }
 
-.info-box{
+.infoBox{
+    grid-column-start: 2;
+}
+
+.info{
     margin: 0px 35px;
     text-align: center;
 }
@@ -64,19 +68,78 @@ h3, span{
 }
 
 @media only screen and (max-width: 700px){
-    .info{
+    .infoContainer{
         display: grid;
         justify-content: center;
         align-items: center;
+        row-gap: 20px;
         height: 30vh;
-        grid-template-columns: 0.5fr ;
+        grid-template-columns: 100%;  
+    }
+
+    .infoBox{
+        grid-column-start: 1;
+    }
+
+    .info{
+        margin: 0px 35px;
+        text-align: center;
     }
 
     .App-Info{
         margin-bottom: 10rem;
-        height: 50vh;
+        height: 60vh;
         background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
     }
-    
+}
 
+@media only screen and (max-width: 900px){
+    .infoContainer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        grid-template-columns: 100%;  
+    }
+
+    .infoBox{
+        grid-column-start: 1;
+    }
+
+    .info{
+        margin: 0px 35px;
+        text-align: center;
+    }
+
+    .App-Info{
+        margin-bottom: 10rem;
+        height: 40vh;
+        background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .infoContainer{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        height: 30vh;
+        grid-template-columns: 0.5fr;
+    }
+
+    .infoBox{
+        grid-row-start: 4;
+    }
+
+    .info{
+        margin: 0px 35px;
+        text-align: center;
+    }
+
+    .App-Info{
+        margin-bottom: 10rem;
+        height: 80vh;
+        background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
+    }
 }
