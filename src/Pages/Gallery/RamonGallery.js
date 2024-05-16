@@ -39,7 +39,7 @@ const RamonGallery = ({token, ...props}) => {
 return (
     <>
         <div className='main_container'> 
-            <div>
+            <div className='header'>
                 <h1>Gallery</h1>
             </div>
             

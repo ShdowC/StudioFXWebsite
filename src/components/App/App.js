@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import Body from '../Body/Body';
 import Artists from '../Artists/Artist';
+import Update from '../Updates/Update';
 import Footer from '../Footer/Footer';
 import './App.css';
 import { Route, Routes } from "react-router-dom";
@@ -22,6 +23,7 @@ function App() {
             <Header />
             <Body />
             <Artists />
+            <Update />
             <Footer />
           </>
           } 
@@ -47,7 +49,8 @@ function App() {
           <>
             <Header />
             <Gallery name="Ramon Gonazales" />
-            <RamonGallery token={process.env.REACT_APP_INS_TOKEN2} limit={12} />            
+            <RamonGallery token={process.env.REACT_APP_INS_TOKEN2} limit={12} /> 
+
             <Footer />
           </>
         } 
