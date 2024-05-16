@@ -10,11 +10,13 @@ import { Gallery } from '../../Pages/Gallery/Gallery';
 import ShaneGallery from '../../Pages/Gallery/ShaneGallery';
 import RamonGallery from '../../Pages/Gallery/RamonGallery';
 
+
 function App() {
 
   return (
     <div className="App">
       <img src={require('../../resources/Background/ato.png')} alt='background-overlay' className='bg-img'/>
+      
       <Routes>
         <Route path='/' element={
           <>
