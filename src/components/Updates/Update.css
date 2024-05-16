@@ -1,5 +1,17 @@
 .comingSoon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16rem;
     text-align: center;
     height: 60vh;
+}
+
+@media only screen and (max-width: 500px) {
+    .comingSoon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 10px;
+    }
 }
