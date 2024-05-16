@@ -64,4 +64,8 @@ button{
       grid-column-gap: 5%;
       height: 100vh;
     }
+
+    .bg_img{
+        display: none;
+    }
   }

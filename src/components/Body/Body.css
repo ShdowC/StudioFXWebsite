@@ -62,3 +62,21 @@ a{
 h3, span{
     font-family: "Ubuntu", sans-serif;
 }
+
+@media only screen and (max-width: 700px){
+    .info{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        grid-template-columns: 0.5fr ;
+    }
+
+    .App-Info{
+        margin-bottom: 10rem;
+        height: 50vh;
+        background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
+    }
+    
+
+}
