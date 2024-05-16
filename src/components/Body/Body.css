@@ -37,7 +37,7 @@
 .App-Info{
     margin-bottom: 10rem;
     height: 45vh;
-    background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
+    background: linear-gradient(45deg, rgb(0, 0, 0) 10.6%, rgb(111, 22, 22) 97.7%);
 }
 
 .infoContainer{
