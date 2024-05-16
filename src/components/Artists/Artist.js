@@ -15,15 +15,15 @@ function Artists(){
                 <div className="card1">
                     <img src={require('../../resources/Shane.png')} alt="Artist 1" className='profileImg'/>
                     <Link to='/Gallery/StudioFX'><button>View Gallery</button></Link>
-                    <h2>Shane Singh</h2>
-                    <p>Specializes in Shaneing</p>
+                    <h2>SHANE SINGH</h2>
+                    <p>SPECIALIZES IN SHANEING</p>
                 </div>
 
                 <div className="card2">
                     <img src={require('../../resources/Ramon.png')} alt="Artist 2" className='profileImg'/>
                     <Link to='/Gallery/MadMenInk'><button>View Gallery</button></Link>
-                    <h2>Ramon Gonzales</h2>
-                    <p>Specializes in:</p>
+                    <h2>RAMON GONZALES</h2>
+                    <p>SPECIALIZES IN SHANEING</p>
                 </div>                
             </div>
 
